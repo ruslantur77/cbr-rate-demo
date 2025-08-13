@@ -13,7 +13,7 @@ license: mit
 Попробовать в Space на [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/spaces/ruslan-t/cbr-rate-demo)
 
 # CBR Key-Rate Forecast  
-**Bidirectional GRU** для прогноза **ключевой ставки ЦБ РФ**.
+**Bidirectional LSTM** модель для прогноза **ключевой ставки ЦБ РФ**.
 
 ### 🚀 Как пользоваться
 1. Введите **4 последних месяца** значений:
@@ -25,7 +25,7 @@ license: mit
 
 ### ⚙️ Модель
 - **Framework**: TensorFlow 2.x  
-- **Architecture**: Bidirectional GRU (32 units)  
+- **Architecture**: Bidirectional LSTM (32 units)  
 - **Input**: 11 признаков (4 USD + 4 CPI + 3 KS)  
 - **Val MAE**: ≈ 0.23 п.п. на истории 2013-2025  
 - **Scaler**: RobustScaler (fit on train only)
