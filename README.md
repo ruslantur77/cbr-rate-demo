@@ -10,6 +10,7 @@ app_file: app.py
 pinned: false
 license: mit
 ---
+Попробовать в Space на [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/spaces/ruslan-t/cbr-rate-demo)
 
 # CBR Key-Rate Forecast  
 **Bidirectional GRU** для прогноза **ключевой ставки ЦБ РФ**.
