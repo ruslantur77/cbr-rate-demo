@@ -1,17 +1,4 @@
----
-title: Cbr Rate Demo
-emoji: 📈
-colorFrom: green
-colorTo: purple
-sdk: gradio
-sdk_version: 5.42.0
-python_version: 3.12.0
-app_file: app.py
-pinned: false
-license: mit
----
-
-Репозиторий на [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/ruslantur77/cbr-rate-demo/)
+Репозиторий на [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/spaces/ruslan-t/cbr-rate-demo)
 
 # CBR Key-Rate Forecast  
 **Bidirectional LSTM** для прогноза **ключевой ставки ЦБ РФ**.
