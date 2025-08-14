@@ -10,10 +10,11 @@ app_file: app.py
 pinned: false
 license: mit
 ---
-Попробовать в Space на [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/spaces/ruslan-t/cbr-rate-demo)
+
+Репозиторий на [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/ruslantur77/cbr-rate-demo/)
 
 # CBR Key-Rate Forecast  
-**Bidirectional LSTM** модель для прогноза **ключевой ставки ЦБ РФ**.
+**Bidirectional LSTM** для прогноза **ключевой ставки ЦБ РФ**.
 
 ### 🚀 Как пользоваться
 1. Введите **4 последних месяца** значений:
@@ -27,7 +28,11 @@ license: mit
 - **Framework**: TensorFlow 2.x  
 - **Architecture**: Bidirectional LSTM (32 units)  
 - **Input**: 11 признаков (4 USD + 4 CPI + 3 KS)  
-- **Val MSE**: ≈ 0.6636 на истории 2013-2025  
+- **Val MSE**: ≈ 0.6636 на истории 2013-2025
+- **MAE** ≈ 1.22
+- **RMSE** ≈ 1.98
+- **MAPE** ≈ 10.22 %
+- **DirAcc** ≈ 34.6 % 
 - **Scaler**: RobustScaler (fit on train only)
 
 ### 📦 Файлы
