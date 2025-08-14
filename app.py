@@ -27,16 +27,28 @@ def predict(usd_4, usd_3, usd_2, usd_1,
 
 iface = gr.Interface(
     fn=predict,
-    inputs=[gr.Number(label=f"{c}_{i}") for c, i in
-            [('usd',4),('usd',3),('usd',2),('usd',1),
-             ('inf',4),('inf',3),('inf',2),('inf',1),
-             ('ks',4),('ks',3),('ks',2)]],
+    inputs = [
+    gr.Number(label="Доллар 3 месяца назад"),
+    gr.Number(label="Доллар 2 месяца назад"),
+    gr.Number(label="Доллар 1 месяц назад"),
+    gr.Number(label="Текущий курс доллара"),
+
+    gr.Number(label="Инфляция 3 месяца назад"),
+    gr.Number(label="Инфляция 2 месяца назад"),
+    gr.Number(label="Инфляция 1 месяц назад"),
+    gr.Number(label="Текущая инфляция"),
+
+    gr.Number(label="Ключевая ставка 2 заседания назад"),
+    gr.Number(label="Ключевая ставка 1 заседание назад"),
+    gr.Number(label="Текущая ключевая ставка"),
+],
     outputs=gr.Number(label="Прогноз КС, %"),
     title="CBR Key-Rate Forecast",
     description=(
     "Введите значения USD за последние 4 месяца, 4 последних месяных CPI и 3 последних КС → получите прогноз по будущей ставке.\n\n"
     f"Текущий курс USD: {url_usd}\n\n"
-    f"Текущие КС и инфляция: {url_inf}"
+    f"Текущие КС и инфляция: {url_inf}\n\n"
+    "* Не является ИИР. Модель и автор не призывывет что-либо купить. Ответ сгенерирован нейросетью, только для справки."    
 )
 )
 iface.launch()
